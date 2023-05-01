@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(249, 234, 217);
+}
+
+li {
+    list-style: none;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    /* justify-content: space-between; */
+}
+
+header h1 {}
+
+header .form {
+    margin-left: auto;
+    width: 250px;
+}
+
+header .form .search {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+header .form input[type="submit"] {
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    height: 30px;
+    background-color: powderblue;
+}
+
+.menu{display: flex; width:100%;}
+.menu li{width: 25%; background-color: rgb(149, 194, 226); transition:0.3s;}
+
+.menu li:hover{width: 35%; background-color:forestgreen;}
+
+.menu li .menu_link{
+    padding: 15px 0;
+    display:block;
+    font-weight: bold;
+    font-style: 20px;
+    text-align: center;
+}
+
+/* primary */
+.primary{padding-top: 20px;}
+.primary .card-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.primary .card-list .card-item{
+    width: 33.3333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+
+}
+.primary .card-list .card-item .card-image{
+    background: url(https://mblogthumb-phinf.pstatic.net/20141221_283/douloveher_14191448538897E1qR_PNG/The.Grand.Budapest.Hotel.2014.1080p.BluRay.x264.DTS-ONe_0000201593ms.png?type=w2);
+    padding-bottom: 80%;
+    width: 100%;
+    background-size:cover;
+}
+.primary .card-list .card-item .card-desc{
+    padding: 15px;
+    background-color: #fff;
+    flex-grow: 1;}
+
+/* secondard     */
+.secondard{
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.info-list{}
+
+.info-list .info-list-item{
+    display: flex;
+    margin: 7px 0;
+}
+.info-list .info-list-item::before{
+    content:"♣"; margin-right: 7px;}
+
+.user-list{margin-top: 35px;}
+.user-list .user-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.user-list .user-item .user-photo{
+    background: url(https://i.pinimg.com/236x/51/18/94/51189499a880405aa14090c0a9ae5654.jpg);
+    width: 50px; height: 50px;
+    background-size: cover;
+    border: 2px solid #ff35c9;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.user-list .user-item .user-name{
+    margin-left: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.user-list .user-item .message-content{margin-left: 7px;}
+
+/* //순서바꾸기 */
+
+.primary{order:2;
+    width: calc(100% - 600px);
+}
+.secondard1{order:1;}
+.secondard2{order:3;}
+
+footer{
+    order:4;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    line-height: 3;
+}
+@media(max-width:1200px){
+    .secondard{width: 200px;}
+    .primary{width: 50%; flex-grow: 1;}}
+
+@media(max-width:1024px){
+    .primary .card-list .card-item{width: 50%;}
+}  
+.primary .card-list .card-item:last-child{display: none;}  
+
+@media(max-width:820px){
+    .secondard{width: 100%;}
+}
+
+@media(max-width:600px){
+    .secondard1{order:2}
+    .primary .card-list .card-item{width:100% ;}
+
+}

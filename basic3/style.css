@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    height: 100vw;
+}
+
+.container {
+    border: 2px solid #7be8f2;
+    background-color: rgb(255, 182, 240);}
+
+.container .item{
+    border: 2px solid #952828;
+    background-color: #c2aefc;
+    width: 200px; height: 200px;
+    
+}
+

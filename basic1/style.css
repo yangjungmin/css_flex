@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid powderblue;
+    background-color: blue;
+    display: flex;
+   /*  display: inline-flex; */
+    flex-direction: row;/*  //기본값 */
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+ */
+
+
+/* 줄넘김처리 */
+flex-wrap: wrap;
+/* flex-wrap: wrap-reverse; */
+
+/* 메인축방향과, 줄머김 축약형 */
+flex-flow:row wrap; 
+/* flex-flow:row-nowrap; */
+}
+
+.container .item {
+    border: 2px solid powderblue;
+    background-color: gold;
+    width: 40%;
+}

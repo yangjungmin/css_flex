@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid powderblue;
+    background-color: blue;
+    display: flex;}
+  
+
+.container .item {
+    border: 2px solid powderblue;
+    background-color: gold;
+    /* flex-basis: auto;인데 압축하면 0%가 작용된다 */
+    flex: 1;
+    flex: 1 1 0%;
+    flex:1 1 300px;
+    /* flex:flex-grow flex-shrink flex-basis; */
+    /* flex:0 1 auto; */
+    
+    /* flex-grow:1; 늘어날 공간이 있다면 늘어나겠다.
+    flex-shrink:1; 줄어들 공간이 있다면 줄어들겠다.
+    flex-basis:auto; 넓이를 설정했다면 그것을 인식하겠다. */
+
+}
+
+.container .item:nth-child(1){
+    width: 200px;
+    flex:1 0 ;
+}

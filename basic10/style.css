@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 2px solid powderblue;
+    background-color: blue;
+    display: flex;
+    width: 500px; height: 500px;
+    text-align: center;
+}
+  
+
+.container .item {
+    width: 200px; height: 200px;
+    background-color: gold;
+    border: 2px solid #000;
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
+}

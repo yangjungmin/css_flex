@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid powderblue;
+    background-color: blue;
+    display: flex;
+
+}
+
+.container .item {
+    border: 2px solid powderblue;
+    background-color: gold;
+   
+}
+
+.container .item:nth-child(1){order:3}
+.container .item:nth-child(2){order:2}
+.container .item:nth-child(3){order:1}
